@@ -1,23 +1,19 @@
-# GLua syntax highlighting in sublime
+# GLua syntax highlighting for Sublime Text 4
+This is literally a copy paste of the default Lua syntax highlighting with GLua
+syntax added. I did this because the old syntax files have some old choices that
+I do not personally like with my color scheme (e.g. commas were colored red for
+whatever reason).
 
-## Important
+Completion (if it still even works, I just use LSP) is also updated to latest
+wiki scrape as of 2023/12/10 (`yyyy/mm/dd`)
 
-Since I (FPtje) have moved away from Sublime, I no longer have time to maintain
-this repository. That means that I will not be solving bugs or updating the
-definitions. Pull requests will still be accepted and merged, but issues will
-not be.
+## Installing
+1. Open Sublime Text
+2. Select Preferences > Browse Packages...
+3. Copy the folder in which this README.txt is located, to the folder that just opened
+4. Restart Sublime Text
 
-## Installing throught the package manager:
-1. Open Sublime
-1. Install [Package Control](https://packagecontrol.io/installation)
-1. Press Ctrl + Shift + P
-1. type install and press enter
-1. Type Gmod and press enter
-1. Restart sublime text
-
-When using sublime text 3 you will have to disable the default Lua plugin. Otherwise the default Lua plugin will remain as the default syntax highlight for all .lua files.
-This can be done by adding "Lua" to the ignored_packages setting. If you don't know how to do this, do this:
-
+### Disabling default Lua syntax
 1. Preferences > Settings - User
 2. Add a comma after the last setting
 3. Make a newline under the last setting
@@ -25,17 +21,6 @@ This can be done by adding "Lua" to the ignored_packages setting. If you don't k
 
 (Note how "Vintage" is also there. It's a package that's disabled by default.)
 
-## Installing manually:
-
-1. Open sublime
-2. Select Preferences > Browse Packages...
-3. Copy the folder in which this README.txt is located, to the folder that just opened
-4. Restart sublime
-
-
-WHEN INSTALLED:
-Open a lua file and go to view > Apply Syntax Highlighting > Gmod Lua. This file and the next one you'll open will have the GLua syntax.
-
 ## Credits
-
-Thanks to @JohnnyCrazy and @djtb2924 for their wiki scrapers that provides the autocomplete entries!
+- FPtje - Original maintainer
+- JohnnyCrazy and djtb2924 - gmod-wiki-scraper

@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[do
-	${1}
-end]]></content>
-	<tabTrigger>do</tabTrigger>
-	<scope>source.lua</scope>
-	<description>do</description>
-</snippet>
